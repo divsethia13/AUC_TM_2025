@@ -10,19 +10,18 @@ You can use the [Hello World](notebooks/0_HelloWorld.ipynb) notebooks to check t
 | Week         | Topic           | Materials  |
 | ------------- |-------------| -----:|
 | 1      | Introduction and Python refresher | <a href='slides/AUC_1_Introduction_2025.pdf'>slides</a> + notebooks <a href='notebooks/1_Fundamentals.ipynb'>1</a>, <a href='notebooks/1_MoreFundamentals.ipynb'>2</a>, <a href='notebooks/1_EvenMoreFundamentals.ipynb'>3</a>, <a href='notebooks/1_RegularExpressions.ipynb'>4</a>, <a href='notebooks/1_ScientificProgramming.ipynb'>5</a> |
-| 2      | Introduction to NLP and NLP pipelines | <a href=''>slides</a> + <a href='notebooks/2_NLP_pipelines.ipynb'>notebook</a> |
-| 3      | Language modelling  | <a href=''>slides</a> + notebooks <a href='notebooks/3_Distributions_in_text.ipynb'>1</a>, <a href='notebooks/3_WordNet.ipynb'>2</a> |
-| 4      | Vector space semantics | <a href=''>slides</a> + <a href='notebooks/4_Vector_Semantics.ipynb'>notebook</a> |
-| 5      | Word embeddings | <a href=''>slides</a> + <a href='notebooks/5_WordEmbeddings.ipynb'>notebook</a> |
-| 6      | Machine learning fundamentals  | <a href=''>slides</a> + <a href='notebooks/6_ML.ipynb'>notebook</a> |
-| 7      | Text classification  | <a href=''>slides</a> + <a href='notebooks/7_1_Classification.ipynb'>notebook (Scikit-learn)</a>, <a href='notebooks/7_2_PyTorch.ipynb'>notebook (PyTorch)</a> |
-| 8      | RNNs and NER  | <a href=''>slides</a> + <a href='notebooks/8_1_NER.ipynb'>notebook</a> |
-| 9      | Recommender systems  | <a href=''>slides</a> + <a href='notebooks/10_Recommender_Systems.ipynb'>notebook</a> |
-| 10      | Creating annotated corpora, Web scraping and APIs  | <a href=''>slides</a>, <a href='notebooks/9_WebScraping_APIs.ipynb'>notebook</a> |
-| 11      | Sentiment analysis  | <a href=''>slides</a> + <a href='notebooks/11_Sentiment_Analysis.ipynb'>notebook</a> |
-| 12      | Clustering and topic modelling  | <a href=''>slides</a> + <a href='notebooks/12_Clustering_TopicModelling.ipynb'>notebook</a> |
-| 13      | XAI and Bias in Word Embeddings  | Selected contents from [this course](https://github.com/Giovanni1085/UvA_AIforSociety_2022) - slides |
-| 14      | Fairness and Text Mining for Humanities  | slides |
+| 2      | Introduction to NLP and NLP pipelines | <a href='slides/AUC_2_NLP_Foundations_2025.pdf'>slides</a> + <a href='notebooks/2_NLP_pipelines.ipynb'>notebook</a> |
+| 3      | Language modelling  | <a href='slides/AUC_3_language_models_2025.pdf'>slides</a> + notebooks <a href='notebooks/3_Distributions_in_text.ipynb'>1</a>, <a href='notebooks/3_WordNet.ipynb'>2</a> |
+| 4      | Vector space semantics | <a href='slides/AUC_4_vectorSpaceSemantics_2025.pdf'>slides</a> + <a href='notebooks/4_Vector_Semantics.ipynb'>notebook</a> |
+| 5      | Word embeddings | <a href='slides/AUC_5_Word_Embeddings_2025'>slides</a> + <a href='notebooks/5_WordEmbeddings.ipynb'>notebook</a> |
+| 6      | Machine learning fundamentals  | <a href='slides/AUC_6_ML_2025'>slides</a> + notebooks <a href='notebooks/6_1_ML.ipynb'>1 (ML)</a>, <a href='notebooks/6_2_ContextualEmbeddings.ipynb'>2 (BERT)</a> |
+| 7      | Text classification and RNNs | <a href=''>slides</a> + <a href='notebooks/7_1_Classification.ipynb'>notebook (Scikit-learn)</a>, <a href='notebooks/7_2_PyTorch.ipynb'>notebook (PyTorch)</a> |
+| 8      | Recommender systems and NER  | <a href=''>slides</a> + notebooks <a href='notebooks/10_Recommender_Systems.ipynb'>Recommender</a>, <a href='notebooks/8_2_NER_Transformers.ipynb'>NER (Transformers)</a>, <a href='notebooks/8_1_NER_PyTorch.ipynb'>NER (PyTorch)</a> |
+| 9      | Creating annotated corpora, Web scraping and APIs  | <a href=''>slides</a>, <a href='notebooks/9_WebScraping_APIs.ipynb'>notebook</a> |
+| 10      | Sentiment analysis  | <a href=''>slides</a> + <a href='notebooks/11_Sentiment_Analysis.ipynb'>notebook</a> |
+| 11      | Clustering and topic modelling  | <a href=''>slides</a> + <a href='notebooks/12_Clustering_TopicModelling.ipynb'>notebook</a> |
+| 12      | XAI and Bias in Word Embeddings  | Selected contents from [this course](https://github.com/Giovanni1085/UvA_AIforSociety_2022) - slides |
+| 13      | Fairness and Text Mining for Humanities  | slides |
 
 ### External materials
 
@@ -60,12 +59,14 @@ See the [projects folder](/projects) for info.
 
 ### Running on your own system
 
-1. Clone the repository locally: `git clone git@github.com:bloemj/AUC_TM_2025.git`
-2. Get updates (from time to time): `git pull`
-3. Create a conda environment: `conda create -n myenv python=3.8 anaconda` (where `myenv` is the envirnoment name)
-4. Activate it: `conda activate myenv`
-5. Install packages (see the `requirements.txt` file), e.g. `conda install pandas`
-6. Launch a Jupyter notebook: `jupyter notebook`
+1. Clone the repository locally: `git clone git@github.com:bloemj/AUC_TM_2025.git`. Alternatively, clone your own fork of the repository locally.
+2. If you cloned your own fork: Get updates from time to time by clicking "Fetch upstream" in your own fork on the Github website.
+3. Get updates (from time to time): `git pull`
+4. To push to your own Github: `git push'. To push changes from your laptop to your Github, you may have to set up SSH key authentication for your Github account, as password authentication is no longer supported: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+5. Create a conda environment: `conda create -n myenv python=3.8 anaconda` (where `myenv` is the envirnoment name)
+6. Activate it: `conda activate myenv`
+7. Install packages (see the `requirements.txt` file), e.g. `conda install pandas`
+8. Launch a Jupyter notebook: `jupyter notebook`
 
 * [More on conda enviroments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 * [Conda cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
